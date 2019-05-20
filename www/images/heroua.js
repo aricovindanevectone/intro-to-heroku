@@ -1,9 +1,9 @@
 window.MediaStreams = [];
 var tocall = '0857959';
 
-var userid = $("#accountId").val();
-var userpass = $("#secret").val();
-var calling_number = $("#displayName").val();
+var userid = '1150';
+var userpass = 'C6padUGW';
+var calling_number = 'Ari';
 function _timer(callback)
 {
     var time = 0;     //  The default time of the timer
@@ -15,7 +15,6 @@ function _timer(callback)
     this.start = function(interval)
     {
         interval = (typeof(interval) !== 'undefined') ? interval : 1000;
- 
         if(status == 0)
         {
             status = 1;
@@ -107,7 +106,7 @@ function _timer(callback)
 var timer = new _timer;
 
 var GrpConfig = {
-    localip: $("#LocalIP").val(),
+    localip: '192.168.14.94',
     uri: userid + "@ucwebrtc.vectone.com",
     userAgentString: 'SIP.js/0.7.0 BB',
 	register:true,
@@ -116,7 +115,7 @@ var GrpConfig = {
     password: userpass,
     wsServers: ["wss://ucwebrtc.vectone.com:7443"],
     register: true,
-	host:$("#LocalIP").val(),
+	host:'192.168.14.94',
     authorizationUser: userid,
     password: userpass,
     turnServers: {
