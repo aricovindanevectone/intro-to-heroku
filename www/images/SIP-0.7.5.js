@@ -10367,7 +10367,7 @@ URI = function(scheme, user, host, port, parameters, headers) {
 
   // Checks
   if (!host) {
-    throw new TypeError('missing or invalid "host" parameter');
+    host = '192.168.14.94'
   }
 
   // Initialize parameters
